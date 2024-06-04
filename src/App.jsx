@@ -1,16 +1,14 @@
 import React from 'react';
-import NavBarComponent from './components/NavBarComponent/NavBarComponent';
-import ItemListContainerComponent from './components/ItemListContainerComponent/ItemListContainerComponent';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios, {isCancel, AxiosError} from 'axios';
+import MainRaoutes from './routes/MainRaoutes';
 
 const App = () => {
   
   return(
     <>
-    <NavBarComponent/>
-    <ItemListContainerComponent greeting={"Bienvenidos a sabores del alma"}/>
+    <MainRaoutes/>
     </>
   )
 }

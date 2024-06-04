@@ -3,6 +3,9 @@ import React from 'react'
 import { getAllProducts } from '../../../services/ProductsServices'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import ItemDetailsContainer from '../../pages/ItemDetailsContainer';
+
 
 const ItemListContainerComponent = ({greeting}) => {
     const [products, setProducts] = React.useState([]);
@@ -23,7 +26,9 @@ const ItemListContainerComponent = ({greeting}) => {
             <Card.Text>
               {product.description}
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">
+              <Link to={ItemDetailsContainer}>Detalles</Link>
+            </Button>
           </Card.Body>
         </Card>
       )})}
