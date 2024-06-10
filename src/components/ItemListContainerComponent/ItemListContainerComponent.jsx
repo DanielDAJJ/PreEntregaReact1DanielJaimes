@@ -28,7 +28,7 @@ const ItemListContainerComponent = () => {
               {product.description}
             </Card.Text>
             <Button variant="primary">
-              <Link to={ItemDetailsContainer}>Detalles</Link>
+              <Link to={ItemDetailsContainer} className='enlaceBoton'>Detalles</Link>
             </Button>
           </Card.Body>
         </Card>

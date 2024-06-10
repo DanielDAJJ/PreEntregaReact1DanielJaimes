@@ -9,7 +9,7 @@ export const UseProducts = () => {
     }).catch((err) => {
         console.log(err);
     });
-  })
+  }, [])
   return {products}
 }
 

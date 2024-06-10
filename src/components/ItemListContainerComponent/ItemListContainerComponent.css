@@ -1,9 +1,13 @@
 .ItemListContainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: 4rem 0;
     grid-template-rows: auto;
     justify-items: center;
     align-self: center;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+.enlaceBoton{
+    text-decoration: none;
+    color: #f3f3f7;
 }
