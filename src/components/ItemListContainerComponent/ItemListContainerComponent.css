@@ -1,0 +1,9 @@
+.ItemListContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 0;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-self: center;
+    gap: 0.5rem;
+}

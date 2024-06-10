@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react'
 import ItemListContainerComponent from '../components/ItemListContainerComponent/ItemListContainerComponent'
+import UseProducts from '../../Hooks/UseProducts'
 
 const Home = () => {
-    useEffect(() => {
-        document.title = "Sabores Del Alma"
-    }, [])
+  const {products} = UseProducts()
   return (
     <div>
-        <ItemListContainerComponent/>
+        <ItemListContainerComponent products = {products}/>
     </div>
   )
 }

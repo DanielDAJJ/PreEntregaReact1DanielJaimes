@@ -5,9 +5,10 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import ItemDetailsContainer from '../../pages/ItemDetailsContainer';
+import "./ItemListContainerComponent.css"
 
 
-const ItemListContainerComponent = ({greeting}) => {
+const ItemListContainerComponent = () => {
     const [products, setProducts] = React.useState([]);
     React.useEffect(() => {
       getAllProducts()

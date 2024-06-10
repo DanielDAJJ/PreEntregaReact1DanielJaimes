@@ -1,15 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import UseProducts from '../../Hooks/UseProducts'
 
-const ItemDetailsContainer = () => {
-  React.useEffect(()=>{
-    getProductById()
-  })
-    return (
-        <div>
-            
-        </div>
-  )
+const ItemDetailsContainer = ({products}) => {
+  // React.useEffect(()=>{
+  //   getProductById()
+  // })
+    return <div className='itemListContainer'>{products}</div>
+  
 }
 
 export default ItemDetailsContainer

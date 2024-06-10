@@ -12,12 +12,12 @@ const NavBarComponent = () => {
     return (
     <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-            <Link href="/">Sabores Del Alma</Link>
+        <Navbar.Brand><Link to="/">Sabores Del Alma</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Link to="/">Home</Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
+                    <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                    <Nav.Link>Link</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">
